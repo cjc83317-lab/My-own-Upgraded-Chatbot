@@ -1,22 +1,98 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["My pleasure", "You're Welcome"],
-         "context": [""]
-        },
-        {"tag": "query",
-         "patterns": ["What is Simplilearn?"],
-         "responses": ["Simplilearn is the popular online Bootcamp & online courses learning platform "],
-         "context": [""]
-        } 
-    ]}
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hey", "Hi there", "Hello", "Good to see you", "Yo", "What's up"
+      ],
+      "responses": [
+        "Hey! What can I help you with today?",
+        "Hi there! Ready when you are.",
+        "Hello! Ask me anything."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Catch you later", "I'm done", "See you", "Talk to you soon"
+      ],
+      "responses": [
+        "Take care!", "See you next time!", "Goodbye for now!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Appreciate it", "Thank you", "Much obliged", "You're a lifesaver"
+      ],
+      "responses": [
+        "You're very welcome!", "Glad I could help!", "Anytime!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "weather_request",
+      "patterns": [
+        "What's the weather like?", "Tell me the weather", "Is it sunny in Cebu?", "Weather update"
+      ],
+      "responses": [
+        "Sure! Which city or location are you asking about?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "math_help",
+      "patterns": [
+        "Can you solve 8 times 7?", "What's 15 divided by 3?", "I need help with math", "Calculate 12 plus 9"
+      ],
+      "responses": [
+        "Let me do the math for you...", "Crunching the numbers..."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "currency_exchange",
+      "patterns": [
+        "Convert USD to JPY", "What's the exchange rate for EUR?", "How much is 1 dollar in yen?", "Currency info"
+      ],
+      "responses": [
+        "Sure! Which currency do you want to convert to?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "time_request",
+      "patterns": [
+        "What time is it in Tokyo?", "Tell me the time", "Current time in London", "Time now"
+      ],
+      "responses": [
+        "Got it. Which city or country are you asking about?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "fun_fact",
+      "patterns": [
+        "Tell me something cool", "Give me a fun fact", "Surprise me with trivia", "Random fact please"
+      ],
+      "responses": [
+        "Did you know that octopuses have three hearts?",
+        "Fun fact: Bananas are berries, but strawberries aren't!",
+        "Here's one: The Eiffel Tower can grow taller in summer due to heat expansion."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure about that, but I can look it up for you.",
+        "Let me check online sources and get back to you.",
+        "That one's tricky — give me a second to search."
+      ],
+      "context": [""]
+    }
+  ]
+}
